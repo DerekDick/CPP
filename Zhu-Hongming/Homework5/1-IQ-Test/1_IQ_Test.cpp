@@ -1,9 +1,9 @@
 #include <iostream>
+#include <cstdlib> 
 
 using namespace std;
 
 bool square[4][4]; //The 4x4 square
-
 bool isPossible(int i, int j);
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
 		for (int j = 0; j < 4; j++) {
 			char c;
 			cin >> c;
-			if (c == '.') {
+			if (c == '#') {
 				square[i][j] = true;
 			}
 			else {
@@ -26,7 +26,7 @@ int main() {
 		for (int j = 0; j < 3; j++) {
 			if (isPossible(i, j)) {
 				cout << "YES" << endl;
-				exit(1);
+				exit(0);
 			}
 		}
 	}
