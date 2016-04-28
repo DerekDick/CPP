@@ -83,7 +83,9 @@ void stretch(int i, int j, int id) {
 			else if (status[i + 1][j] == -1) {
 				status[i + 1][j] = id;
 			}
-			stretch(i + 1, j, id);
+			else {
+				stretch(i + 1, j, id);
+			}
 		}
 	}
 
