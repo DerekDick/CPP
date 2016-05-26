@@ -1,6 +1,9 @@
 /*caesar.h
 *Several functions for encryption and decrytion by Caesar cipher
 ****************************************************************/
+#ifndef CAESAR_H
+#define CAESAR_H
+
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -130,3 +133,4 @@ void encrypt(ofstream &outfile, ifstream &infile, int key) {
 	return;
 }
 
+#endif
